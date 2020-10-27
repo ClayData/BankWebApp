@@ -17,7 +17,28 @@
   
   <servlet-mapping>
   <servlet-name>login</servlet-name>
-  <url-pattern>/</url-pattern>
+  <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>signup</servlet-name>
+  <servlet-class>com.http.SignUpServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>signup</servlet-name>
+  <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>transact</servlet-name>
+  <servlet-class>com.http.BankTransaction</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>transact</servlet-name>
+  <url-pattern>/transact</url-pattern>
+  </servlet-mapping>
+  
   
 </web-app>
